@@ -10,9 +10,10 @@ enum class IVA(val dataInci: String, val General: Double, val Reduit: Double, va
     IVA1995("01-01-1992", 0.16,0.7, 0.4,0.0),
     IVA2010("01-01-2010", 0.18,0.8, 0.4,0.0),
     IVA2012("15-07-2012", 0.21,0.10, 0.4,0.0)
+
 }
 fun main(){
-    println(IVA.entries.size)
+    println()
 }
 fun calcularIVA(preu: Double, tipusIVA: String, dataInci: String): Double{
     val equivalencias = arrayOf("Iva General", "Iva Reduit", "Iva SuperReduit", "Iva Excempt")

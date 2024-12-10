@@ -1,8 +1,8 @@
 package controllers
-
 import java.util.Scanner
 
 fun main(){
+
     val pila = IntArray(10){Int.MIN_VALUE}
     val scanner = obrirScaner()
     menuPila(scanner, pila)
