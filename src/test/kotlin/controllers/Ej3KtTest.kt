@@ -11,10 +11,10 @@ class Ej3KtTest {
     }
 
     @Test
-    fun tancarScaner() { /* No se pueden hacer tests ya que debemos pedir un valor al teclado */
+    fun tancarScaner() { /*No se puede hacer test ya que únicamente cierra el scanner*/
     }
 
     @Test
-    fun validarSuperUsuari() { /*No se puede hacer test ya que únicamente cierra el scanner*/
+    fun validarSuperUsuari() { /* No se pueden hacer tests ya que debemos pedir un valor al teclado */
     }
 }
