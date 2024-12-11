@@ -1,5 +1,9 @@
 package controllers
-
+/**
+ * Función principal para ejecutar el programa
+ * @author Marc Díaz i Ainara Valdivieso
+ * @version 1.0
+ */
 fun main(){
     println(roman(3999))
 }

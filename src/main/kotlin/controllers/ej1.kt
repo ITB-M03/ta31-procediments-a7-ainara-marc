@@ -18,7 +18,9 @@ enum class IVA(val dataInci: String, val General: Double, val Reduit: Double, va
 }
 
 /**
- * Funció principal on mostrem el resultat
+ * Función principal para ejecutar el programa
+ * @author Marc Díaz i Ainara Valdivieso
+ * @version 1.0
  */
 fun main(){
     println(calcularIVA(1.0, "Iva General", "2013-01-01"))

@@ -4,6 +4,8 @@ import java.util.Scanner
 
 /**
  * Función principal para ejecutar el programa
+ * @author Marc Díaz i Ainara Valdivieso
+ * @version 1.0
  */
 fun main(){
     val scanner = obrirScaner()
@@ -15,7 +17,6 @@ fun main(){
  * Función para abrir el scanner y preguntar la contraseña al superusuario
  * @author Marc Díaz
  * @version 1.0
- *
  * @return el scanner abierto
  */
 fun obrirScaner(): Scanner{

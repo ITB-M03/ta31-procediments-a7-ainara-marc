@@ -1,6 +1,8 @@
 package controllers
 /**
  * Función principal donde se muestra el resultado
+ * @author Marc Díaz i Ainara Valdivieso
+ * @version 1.0
  */
 fun main(){
     println(titol("electroencefalografista"))
@@ -8,10 +10,9 @@ fun main(){
 
 /**
  * Función para centrar un texto en la  distancia de 80 espacios
+ * @param titol el texto a centrar
  * @author Marc Díaz
  * @version 1.0
- *
- * @param titol el texto a centrar
  */
 fun titol(titol: String): String{
     val pantalla = CharArray(80){' '}
