@@ -3,10 +3,15 @@ import java.util.Scanner
 
 fun main(){
 
-    val pila = IntArray(10){Int.MIN_VALUE}
+    val pila = crearPila(10)
     val scanner = obrirScaner()
     menuPila(scanner, pila)
     tancarScaner(scanner)
+}
+
+fun crearPila(tamany: Int): IntArray{
+    val arr = IntArray(tamany+1)
+    return arr
 }
 fun menuPila(scanner: Scanner, arr: IntArray){
     var sortir = false
@@ -30,32 +35,19 @@ fun menuPila(scanner: Scanner, arr: IntArray){
 }
 
 fun push(num:Int, arr: IntArray){
-    var i = 0
-    var afegit = false
-    while (i < arr.size && !afegit){
-        if (arr[i] != Int.MIN_VALUE) i++
-        else {
-            arr[i] = num
-            afegit = true
-        }
+    if (arr.last()==arr.size-1) println("La pila es trova plena")
+    else{
+        arr[arr.last()] = num
+        arr[arr.lastIndex]++
     }
-    if(afegit==false) println("La pila es trova plena")
 }
 
 fun pop(arr:IntArray){
-    try {
-        for(i in 0 until arr.size){
-            if (arr[i]== Int.MIN_VALUE) arr[i-1] = Int.MIN_VALUE
-            else if (i == arr.size-1) arr[i] = Int.MIN_VALUE
-        }
-    }
-    catch (ex: IndexOutOfBoundsException){
-        println("La pila esta buida")
-    }
-
+    if (arr.last() == 0) println("La pila esta buida")
+    else arr[arr.lastIndex]--
 }
 
 fun mostrar(arr:IntArray){
-    for (i in arr) if (i != Int.MIN_VALUE) print("$i ")
+    for (i in 0 until  arr.last()) print("${arr[i]} ")
     print("\n")
 }
