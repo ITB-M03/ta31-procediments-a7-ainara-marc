@@ -18,7 +18,7 @@ class Ej1KtTest {
     }
 
     @Test
-    fun calcularIVAReduit1992Hasta199212() {
+    fun calcularIVAReduit1992Hasta121992() {
         val preu = 1972.0
         val tipusIVA = "Iva Reduit"
         val dataInici = LocalDate.parse("1992-10-26").toString()
