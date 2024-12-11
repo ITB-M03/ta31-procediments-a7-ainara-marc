@@ -18,13 +18,13 @@ class Ej1KtTest {
     }
 
     @Test
-    fun calcularIVAReduit1992Hasta1993() {
+    fun calcularIVAReduit1992Hasta199212() {
         val preu = 1972.0
         val tipusIVA = "Iva Reduit"
         val dataInici = LocalDate.parse("1992-10-26").toString()
 
         val resultat = calcularIVA(preu, tipusIVA, dataInici)
-        assertEquals(3155.2000000000003, resultat)
+        assertEquals(2090.32, resultat)
     }
 
     @Test
@@ -34,6 +34,6 @@ class Ej1KtTest {
         val dataInici = LocalDate.parse("2011-10-26").toString()
 
         val resultat = calcularIVA(preu, tipusIVA, dataInici)
-        assertEquals(73.24799999999999, resultat)
+        assertEquals(54.412800000000004, resultat)
     }
 }
